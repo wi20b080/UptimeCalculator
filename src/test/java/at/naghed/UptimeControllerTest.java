@@ -2,6 +2,8 @@ package at.naghed;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import javax.ws.rs.GET;
+
 public class UptimeControllerTest {
 
     @Test
@@ -16,6 +18,5 @@ public class UptimeControllerTest {
         //Assert
         Assertions.assertEquals(String.format("%.2f", 43178.40), actualValue);
     }
-
 
 }
