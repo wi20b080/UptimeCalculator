@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: at.naghed.UptimeControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec <<< FAILURE!
+at.naghed.UptimeControllerTest.test_calculateUptime_shouldBeCalculatedCorrectly()  Time elapsed: 0.025 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <> but was: <43178,40>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1125)
+	at at.naghed.UptimeControllerTest.test_calculateUptime_shouldBeCalculatedCorrectly(UptimeControllerTest.java:17)
+
