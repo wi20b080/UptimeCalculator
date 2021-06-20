@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e95bcc6f-26c5-4544-9845-81bf430d5d35" name="Default Changelist" comment="Fixed Bug - EU - US">
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/naghed/UptimeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/naghed/UptimeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/at/naghed/UptimeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/naghed/UptimeControllerTest.java" afterDir="false" />
+    <list default="true" id="e95bcc6f-26c5-4544-9845-81bf430d5d35" name="Default Changelist" comment="added default operation to the controller(second operation)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,20 +48,9 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="UptimeCalculator" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,6 +97,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UptimeControllerTest (1)" />
         <item itemvalue="JUnit.UptimeControllerTest" />
         <item itemvalue="JUnit.UptimeControllerTest.test_calculateUptime_shouldBeCalculatedCorrectly" />
@@ -128,7 +117,10 @@
       <workItem from="1623081533898" duration="57000" />
       <workItem from="1623081625186" duration="26000" />
       <workItem from="1623082450662" duration="407000" />
-      <workItem from="1623083073978" duration="977000" />
+      <workItem from="1623083073978" duration="2344000" />
+      <workItem from="1623162466090" duration="1817000" />
+      <workItem from="1623530451469" duration="5699000" />
+      <workItem from="1623577633681" duration="5362000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1623020936055</created>
@@ -186,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623083809258</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added default operation to the controller(second operation)">
+      <created>1623084228272</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1623084228272</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +208,7 @@
     <MESSAGE value="Changed ReadMe File" />
     <MESSAGE value="first test(unit test and live testing through the browser) work" />
     <MESSAGE value="Fixed Bug - EU - US" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Bug - EU - US" />
+    <MESSAGE value="added default operation to the controller(second operation)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added default operation to the controller(second operation)" />
   </component>
 </project>

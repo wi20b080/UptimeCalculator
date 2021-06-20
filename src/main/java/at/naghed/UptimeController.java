@@ -1,29 +1,46 @@
 package at.naghed;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import java.io.IOException;
 
-@Path("/api/uptime")
+@Path("/api/maintenanceMode")
 public class UptimeController {
 
-    @GET
-    @Path("/{uptime}")
-    @Produces(MediaType.TEXT_PLAIN)
-    public  String calculateUptime(@PathParam("uptime") double uptime){
-        double minutesOfMonth = 60*24*30;
-        double definedUptimeInPercent = uptime / 100;
-        double uptimeInMinutes = minutesOfMonth * definedUptimeInPercent;
-        return String.format("%.2f", uptimeInMinutes);
+    public static String message = "-";
 
+    @Path("/front")
+    @GET
+    @Produces(MediaType.TEXT_HTML)
+    public String getIndex() throws IOException {
+        java.nio.file.Path path =  java.nio.file.Paths.get("C:\\Users\\Sam\\Documents\\Maintenance_Monitor\\front\\index.html");
+        return java.nio.file.Files.readString(path);
+    }
+    @GET
+    @Produces(MediaType.TEXT_HTML)
+    public Response getStatus(){
+        System.out.println(message);
+        Response.ResponseBuilder head = Response.ok(message);
+        return head.header("Access-Control-Allow-Origin", "*").build();
     }
 
+    public void status(Response a){
+        String.valueOf(a.getStatus());
+    }
 
+    @POST
+    @Path("/{test}")
+    public String createInput(@PathParam("test") String input){
+        System.out.println(input);
+        message = input;
+        return input;
+    }
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String calculateUptime(){
-        return  this.calculateUptime(99.95);
+    @Path("/{test}")
+    public String outputInput(@PathParam("test") String input){
+        System.out.println(input);
+        message = input;
+        return input;
     }
 
 
